@@ -22,14 +22,13 @@ The running app is the App Router FCM PWA: `app/`, `lib/firebase-client.ts`, `li
 - Changing FCM subscribe, send, or install behavior
 - Deleting `public/firebase-messaging-sw.js` or the Firebase libs
 - Deleting local secrets, certs, `node_modules`, or `.next`
-- Creating a GitHub repo or pushing
 - Force-pushing to the previous origin
 
 ## 3. Questions asked and answers
 
 | Question | Answer |
 | --- | --- |
-| Same cleanup as the VAPID sibling? | Yes. Keep FCM source. One root commit. Do not push. |
+| Same cleanup as the VAPID sibling? | Yes. Keep FCM source. One root commit, then push to `https://github.com/noowxela/nextjs-pwa-boilerplate-fcm`. |
 | Where does the starting-repo credit go? | README only. |
 
 ## 4. Proposed approach, pros / cons, rejected alternatives
@@ -41,7 +40,7 @@ The running app is the App Router FCM PWA: `app/`, `lib/firebase-client.ts`, `li
 3. Replace `LICENSE` with MIT copyright 2026 Alex Woon Jun Rong.
 4. Add the starting-repo credit to the README.
 5. Point `000-architecture.md` at `o000o_active/a_3nextjs-pwa-boilerplate_fcm`.
-6. Replace local history with one root commit on `main` and remove the previous `origin`. Do not push.
+6. Replace local history with one root commit on `main`, point `origin` at `https://github.com/noowxela/nextjs-pwa-boilerplate-fcm`, and push `main`.
 
 **Pros:**
 
@@ -64,10 +63,10 @@ The running app is the App Router FCM PWA: `app/`, `lib/firebase-client.ts`, `li
 
 - [x] `.DS_Store`, `.env`, `data/`, and `certificates/` are ignored
 - [x] FCM source files still present
-- [x] `main` has one commit
-- [x] Previous `origin` is removed
+- [x] `main` history does not include the boilerplate commits
+- [x] `origin` is `https://github.com/noowxela/nextjs-pwa-boilerplate-fcm`
 - [x] `npm run build` succeeds
-- [x] Nothing pushed
+- [x] `main` is pushed to that repo
 
 ## 6. Status history
 
@@ -75,3 +74,4 @@ The running app is the App Router FCM PWA: `app/`, `lib/firebase-client.ts`, `li
 | --- | --- | --- |
 | 2026-09-23 | approved | Same cleanup as the VAPID sibling; do not push |
 | 2026-09-23 | implemented | One root commit; previous origin removed; build passed |
+| 2026-09-23 | implemented | Pushed to noowxela/nextjs-pwa-boilerplate-fcm |
