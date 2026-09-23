@@ -31,3 +31,5 @@ Study twin of `a_3nextjs-pwa-boilerplate` (Web Push VAPID). This fork uses **Fir
 | Send | `web-push` + PushSubscription | Firebase Admin + FCM token |
 | SW | `lib/service-worker.js` | `public/firebase-messaging-sw.js` |
 | Cloud | None | Firebase project required |
+
+GitHub Pages (`GITHUB_PAGES=true`) static-exports this UI to `https://noowxela.github.io/nextjs-pwa-boilerplate-fcm/`. Subscribe and send stay on local `next dev`.

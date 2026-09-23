@@ -2,6 +2,8 @@
 
 FCM twin of [nextjs-pwa-boilerplate](https://github.com/noowxela/nextjs-pwa-boilerplate) (Web Push VAPID). Same App Router and install UX; push goes through **Firebase Cloud Messaging** instead of `web-push`.
 
+Static UI (no push server): [GitHub Pages](https://noowxela.github.io/nextjs-pwa-boilerplate-fcm/). Subscribe and send stay on `npm run dev`.
+
 | | Sibling (VAPID) | This app (FCM) |
 | --- | --- | --- |
 | Port | 3000 | **3002** |
