@@ -1,6 +1,6 @@
-# Next.js PWA + FCM (study)
+# Next.js PWA + FCM
 
-FCM twin of [`a_3nextjs-pwa-boilerplate`](../a_3nextjs-pwa-boilerplate) (Web Push VAPID). Same App Router + install UX; push goes through **Firebase Cloud Messaging** instead of `web-push`.
+FCM twin of [nextjs-pwa-boilerplate](https://github.com/noowxela/nextjs-pwa-boilerplate) (Web Push VAPID). Same App Router and install UX; push goes through **Firebase Cloud Messaging** instead of `web-push`.
 
 | | Sibling (VAPID) | This app (FCM) |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ Design notes: [docs/sdd/000-architecture.md](docs/sdd/000-architecture.md), [doc
 
 ## Setup
 
-1. Copy `.env.example` → `.env` / `.env.local` (already filled for the `pwa-pushnotification` study project web config).
+1. Copy `.env.example` to `.env.local` and fill in your Firebase web config and Admin SDK values.
 
 2. **Web config** — Firebase Console → Project settings → Your apps → Web:
 
