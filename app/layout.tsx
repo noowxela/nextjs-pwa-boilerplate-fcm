@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Next.js PWA + FCM',
@@ -12,7 +13,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="main">
+          <div className="gradient"></div>
+        </div>
+        <main className="app">
+            {children}
+        </main>
+      </body>
     </html>
   )
 }
